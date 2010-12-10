@@ -24,11 +24,11 @@ Jeweler::Tasks.new do |gem|
   gem.files      = `git ls-files`.split("\n")
   gem.test_files = `git ls-files -- spec/*`.split("\n")
 
-  gem.add_runtime_dependecy 'rspec', '~> 2.1.0'
-  gem.add_runtime_dependecy 'actionpack', '~> 3.0.0'
-  gem.add_runtime_dependecy 'activerecord', '~> 3.0.0'
-  gem.add_runtime_dependecy 'devise_invitable', '~> 0.3.5'
-  gem.add_runtime_dependecy 'remarkable_devise', '~> 1.0.0'
+  gem.add_runtime_dependency 'rspec', '~> 2.1.0'
+  gem.add_runtime_dependency 'actionpack', '~> 3.0.0'
+  gem.add_runtime_dependency 'activerecord', '~> 3.0.0'
+  gem.add_runtime_dependency 'devise_invitable', '~> 0.3.5'
+  gem.add_runtime_dependency 'remarkable_devise', '~> 1.0.0'
 
   gem.add_development_dependency 'mocha', ">= 0"
   gem.add_development_dependency 'rspec', "~> 2.1.0"
