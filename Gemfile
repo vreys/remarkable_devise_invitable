@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "rspec", "~> 2.0.0"
+gem "rspec", "~> 2.1.0"
 gem "actionpack", "~> 3.0.0"
 gem "activerecord", "~> 3.0.0"
 gem "devise_invitable", "~> 0.3.5"
