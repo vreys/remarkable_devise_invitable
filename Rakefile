@@ -10,6 +10,7 @@ end
 require 'rake'
 
 require 'jeweler'
+require './lib/remarkable/devise/invitable/version.rb'
 Jeweler::Tasks.new do |gem|
   gem.name = "remarkable_devise_invitable"
   gem.homepage = "http://github.com/vreys/remarkable_devise_invitable"
@@ -18,10 +19,21 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Remarkable RSpec matchers for devise_invitable models. It should be used with remarkable_devise.}
   gem.email = "reys.vasily@gmail.com"
   gem.authors = ["Vasily Reys"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.version = Remarkable::Devise::Invitable::Version::STRING
+
+  gem.files      = `git ls-files`.split("\n")
+  gem.test_files = `git ls-files -- spec/*`.split("\n")
+
+  gem.add_runtime_dependecy 'rspec', '~> 2.1.0'
+  gem.add_runtime_dependecy 'actionpack', '~> 3.0.0'
+  gem.add_runtime_dependecy 'activerecord', '~> 3.0.0'
+  gem.add_runtime_dependecy 'devise_invitable', '~> 0.3.5'
+  gem.add_runtime_dependecy 'remarkable_devise', '~> 1.0.0'
+
+  gem.add_development_dependency 'mocha', ">= 0"
+  gem.add_development_dependency 'rspec', "~> 2.1.0"
+  gem.add_development_dependency 'bundler', "~> 1.0.0"
+  gem.add_development_dependency 'jeweler', "~> 1.5.1"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -40,7 +52,7 @@ task :default => :spec
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+  version = Remarkable::Devise::Invitable::Version::STRING
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "remarkable_devise_invitable #{version}"
