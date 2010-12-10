@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
-    ".gitignore",
     ".rspec",
     "Gemfile",
     "LICENSE.txt",
@@ -28,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/remarkable/devise/invitable/version.rb",
     "lib/remarkable/devise/matchers/be_an_invitable_matcher.rb",
     "locale/en.yml",
+    "remarkable_devise_invitable.gemspec",
     "spec/example_models.rb",
     "spec/matchers/be_an_invitable_matcher_spec.rb",
     "spec/matchers_spec.rb",
@@ -60,15 +60,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_runtime_dependency(%q<actionpack>, ["~> 3.0.0"])
-      s.add_runtime_dependency(%q<activerecord>, ["~> 3.0.0"])
-      s.add_runtime_dependency(%q<devise_invitable>, ["~> 0.3.5"])
-      s.add_runtime_dependency(%q<remarkable_devise>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<mocha>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
     else
       s.add_dependency(%q<rspec>, ["~> 2.1.0"])
       s.add_dependency(%q<actionpack>, ["~> 3.0.0"])
@@ -80,15 +71,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_dependency(%q<actionpack>, ["~> 3.0.0"])
-      s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
-      s.add_dependency(%q<devise_invitable>, ["~> 0.3.5"])
-      s.add_dependency(%q<remarkable_devise>, ["~> 1.0.0"])
-      s.add_dependency(%q<mocha>, [">= 0"])
-      s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 2.1.0"])
@@ -101,15 +83,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
     s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-    s.add_dependency(%q<actionpack>, ["~> 3.0.0"])
-    s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
-    s.add_dependency(%q<devise_invitable>, ["~> 0.3.5"])
-    s.add_dependency(%q<remarkable_devise>, ["~> 1.0.0"])
-    s.add_dependency(%q<mocha>, [">= 0"])
-    s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
   end
 end
 
