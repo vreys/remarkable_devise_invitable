@@ -1,0 +1,13 @@
+en:
+  remarkable:
+    devise:
+      be_an_invitable:
+        description: "be an invitable"
+        expectations:
+          included: "%{subject_name} to have Devise :invitable model"
+          has_invitation_token_column: "%{subject_name} to have invitation_token column"
+          has_invitation_sent_at_column: "%{subject_name} to have invitation_sent_at column"
+          options_match: "%{subject_name} to be an invitable with options %{options}, got %{actual}"
+        optionals:
+          invite_for:
+            positive: "for %{inspect}"
