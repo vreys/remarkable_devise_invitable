@@ -11,12 +11,11 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "remarkable_devise_invitable"
   gem.homepage = "http://github.com/vreys/remarkable_devise_invitable"
   gem.license = "MIT"
   gem.summary = %Q{Remarkable RSpec matchers for devise_invitable models}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{Remarkable RSpec matchers for devise_invitable models. It should be used with remarkable_devise.}
   gem.email = "reys.vasily@gmail.com"
   gem.authors = ["Vasily Reys"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
